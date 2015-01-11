@@ -1,4 +1,7 @@
-
+import java.util.Scanner;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 /**
  * Write a description of class Quizzer here.
  * 
@@ -7,27 +10,30 @@
  */
 public class Quizzer
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private ArrayList<String> questions;
+    private ArrayList<String> answers;
 
-    /**
-     * Constructor for objects of class Quizzer
-     */
-    public Quizzer()
+    Quizzer()
     {
-        // initialise instance variables
-        x = 0;
-    }
+        questions = new ArrayList<String>();
+        answers = new ArrayList<String>();
+        Scanner fileIn;
+        try
+        {
+            fileIn = new Scanner(new FileReader("PhysicsProblems.txt"));
+            while (fileIn.hasNext())
+            {
+                String check = fileIn.nextLine();
+                if (check.startsWith("Question"))
+                    questions.add(check);
+                if (check.startsWith("Answer"))
+                    answers.add(check);
+            }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        }
+        catch (IOException errMessage)
+        {
+            System.err.println(errMessage);
+        }
     }
 }
