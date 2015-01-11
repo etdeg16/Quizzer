@@ -1,4 +1,10 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Quizzer()
-numComments=1
+comment1.params=
+comment1.target=void\ startQuiz()
+comment2.params=ans
+comment2.target=boolean\ checkAnswer(java.lang.String)
+comment3.params=
+comment3.target=void\ removeQuestion()
+numComments=4

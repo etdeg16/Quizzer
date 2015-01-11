@@ -12,6 +12,7 @@ public class Quizzer
 {
     private ArrayList<String> questions;
     private ArrayList<String> answers;
+    private int questionNumber;
 
     Quizzer()
     {
@@ -35,5 +36,28 @@ public class Quizzer
         {
             System.err.println(errMessage);
         }
+    }
+
+    public void startQuiz()
+    {
+        questionNumber = (int)(Math.random() * questions.size());
+        System.out.println(questions.get(questionNumber));
+    }
+
+    public boolean checkAnswer(String ans)
+    {
+        if(answers.get(questionNumber).endsWith(ans.trim()))
+        {
+            questions.remove(questionNumber);
+            answers.remove(questionNumber);
+            return true;
+        }
+        return false;
+    }
+
+    public void removeQuestion()
+    {
+        questions.remove(questionNumber);
+        answers.remove(questionNumber);
     }
 }
