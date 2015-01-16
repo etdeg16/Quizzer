@@ -55,7 +55,7 @@ public class QuizzerRunner
                 cont = false;
             }
         }
-
+        
         System.out.println("Would you like to add questions and answeres to the quizzer for next time? (y/n)");
         if (keyIn.nextLine().equalsIgnoreCase("y"))
         {
@@ -75,6 +75,16 @@ public class QuizzerRunner
                     cont = false;
             }
         }
-        System.out.println("Thanks for participating in the quizzer! Goodbye!");
+        
+        System.out.println("You got " + qz.totalCorrect() + " correct!");
+        if (qz.percentCorrect() >= 0.9)
+            System.out.println("Outstanding job! You are definitely ready for the test!");
+        else if (qz.percentCorrect() >= 0.8 && qz.percentCorrect() < 0.9)
+            System.out.println("Good job! With maybe just a little bit of studying, you will be ready!");
+        else if (qz.percentCorrect() >= 0.7 && qz.percentCorrect() < 0.8)
+            System.out.println("Not bad. You may probably need some more study time, but you are on the right track!");
+        else
+            System.out.println("Ouch! Better luck next time!");
+        System.out.println("Thanks for testing your skill in the quizzer! Goodbye!"); 
     }
 }
