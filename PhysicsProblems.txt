@@ -7,3 +7,47 @@ Answer: 63 m
 Question: (I) If you are driving 110 km/h along a straight road and you look to the side for 2.0 s, how far do you travel during this inattentive period?
 Answer: 61 m
 
+Question: (I) A tiger leaps horizontally from a 6.5-m high rock with a speed of 3.5 m/s. How far from the base of the rock will she land?
+Answer: 4.0 m
+
+Question: (II) A ball is thrown horizontally from the roof of a building 45.0 m tall and lands 24.0 m from the base. What was the ball's initial speed?
+Answer: 7.92 m/s
+
+Question: (III) An airplane whose air speed is 620 km/h is supposed to fly in a straight path 35.0 degrees north of east. But a steady 95 km/h wind is blowing from the north. In what direction should the plane head? (You do not need to put the degrees symbol in your answer. Don't forget to include direction!).
+Answer: 42.2 north of east
+
+Question: (I) How much tension must a rope withstand if it is used to accelerate a 960-kg car horizontally along a frictionless surface at 1.20 m/s^2?
+Answer: 1150 N
+
+Question: (II) Arlene is to walk across a "high wire" strung horizontally between two buildings 10.0m apart. The sag in the rope when she is at the midpoint is 10.0 degrees. If her mass is 50.0 kg, what is the tension in the rope at this point?
+Answer: 1410 N
+
+Question: (III) A coffee cup on the dashboad of a car slides forward on the dash when the driver decelerates from 45 km/h to rest in 3.5 s or less, but not if he decelerates in a longer time. What is the coefficeint of static friction between the cup and the dash?
+Answer: 0.36
+
+Question: (II) What is the maximium speed with which a 1050-kg car can round a turn of radius 77 m on a flat road if the coefficient of static friction between tires and road is 0.80?
+Answer: 25 m/s
+
+Question: (II) A hypothetical planet has a radius 1.5 times that of Earth, but has the same mass. What is the acceleration due to gravity near its surface?
+Answer: 4.4 m/s^2
+
+Question: (III) If a curve with a radius of 88 m is perfectly banked for a car traveling 75 km/h, what must be the coefficeint of static friction for a car not to skid when traveling at 95 km/h?
+Answer: 0.22
+
+Question: (I) A 7.0-kg monkey swings from one branch to anotehr 1.2m higher. What is the change in potential energy?
+Answer: 82 J
+
+Question: (II) An 88-g arrow is fried from a bow whose string exerts an average force of 110 N on the arrow over a distance of 78 cm. What is the speed of the arrow as it leaves the bow?
+Answer: 44 m/s
+
+Question: (III) A bicyclist coasts down a 7 degree hill at a steady speed of 5.0 m/s. Assuming a total mass of 75 kg (bicycle plus rider), what must be the cyclist's power output to climb the same hill at the same speed?
+Answer: 900 W
+
+Question: (I) What is the magnitude of the momentum of a 28-g sparrow flying with a speed of 8.4 m/s?
+Answer: 0.24 kg*m/s
+
+Question: (II) A 0.450-kg ice puck, moving east with a speed of 3.00 m/s, has a head-on collision with a 0.900-kg puck initially at rest. Assuming a perfectly elastic collision, what will be the speed and direction of each object after the collision? (separate each answer with a comma)
+Answer: 1.00 m/s west, 2.00 m/s east
+
+Question: (II) Calculate the force exerted on a rocket, given that the propelling gases are expelled at a rate of 1500 kg/s with a speed of 4.0 * 10^4 m/s (at the moment of takeoff).
+Answer: 6.0 * 10^7 N upward
