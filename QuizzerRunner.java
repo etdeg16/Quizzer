@@ -1,9 +1,11 @@
 import java.util.Scanner;
 /**
- * Write a description of class QuizzerRunner here.
+ * Runner for Quizzer.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Ethan De Guzman && Michael Duong
+ * @version 01-16-15
+ * 
+ * We pledge that this program is our own independent work and conforms to Oxford Academy's Academic Honesty Guidelines.
  */
 public class QuizzerRunner
 {
@@ -11,7 +13,7 @@ public class QuizzerRunner
     {
         Scanner keyIn = new Scanner(System.in);
         System.out.println("Hello! Welcome to the quizzer!");
-        System.out.println("Reminder: Make sure to put the correct units in your answers!");
+        System.out.println("Reminder: Make sure to put the correct units in your answers and put a space between the numbers and units!");
         Quizzer qz = new Quizzer();
         boolean cont = true;
         while (cont)
@@ -20,6 +22,7 @@ public class QuizzerRunner
             boolean incorrect = true;
             while (incorrect)
             {
+                System.out.print("Answer: ");
                 if (!qz.checkAnswer(keyIn.nextLine()))
                 {
                     System.out.println("Do you want to remove the question? (y/n)");

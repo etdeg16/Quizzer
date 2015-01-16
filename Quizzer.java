@@ -2,10 +2,12 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.*;
 /**
- * Write a description of class Quizzer here.
+ * Outputs questions and checks if user answers are correct. Questions and answers are stored in a text file. Users also have the option to add questions/answers.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Ethan De Guzman && Michael Duong
+ * @version 01-16-15
+ * 
+ * We pledge that this program is our own independent work and conforms to Oxford Academy's Academic Honesty Guidelines.
  */
 public class Quizzer
 {
@@ -84,7 +86,7 @@ public class Quizzer
 
     public boolean checkAnswer(String ans)
     {
-        if(answers.get(questionNumber).substring(8).equals(ans.trim()))
+        if(answers.get(questionNumber).substring(8).equalsIgnoreCase(ans.trim()))
         {
             System.out.println("Correct!");
             removedQue.add(questions.get(questionNumber));
