@@ -30,7 +30,7 @@ public class Quizzer
         Scanner fileIn;
         try
         {
-            fileIn = new Scanner(new FileReader("PhysicsProblems.txt"));
+            fileIn = new Scanner(new FileReader("Problems.txt"));
             while (fileIn.hasNext())
             {
                 String check = fileIn.nextLine();
@@ -59,7 +59,7 @@ public class Quizzer
         questions.add("Question: " + ques);
         answers.add("Answer: " + ans);
         try{
-            File file = new File("PhysicsProblems.txt");
+            File file = new File("Problems.txt");
             
             PrintStream fileStream = new PrintStream(file);
             // Writes the content to the file
