@@ -1,8 +1,9 @@
 Question: (I) If you are driving 110 km/h along a straight road and you look to the side for 2.0 s, how far do you travel during this inattentive period?
 Answer: 61 m
 
+Question: (III) A rock is dropped from a sea cliff, and the sound of it striking the ocean is heard 3.2 s later. If the speed of sound is 340 m/s, how high is the cliff?
+Answer: 46 m
+
 Question: (II) A car slows down uniformly from a speed of 21.0 m/s to rest in 6.00 s. How far did it travel in that time?
 Answer: 63 m
 
-Question: (III) A rock is dropped from a sea cliff, and the sound of it striking the ocean is heard 3.2 s later. If the speed of sound is 340 m/s, how high is the cliff?
-Answer: 46 m

@@ -25,6 +25,7 @@ public class QuizzerRunner
                     System.out.println("Do you want to remove the question? (y/n)");
                     if (keyIn.nextLine().equalsIgnoreCase("y"))
                     {
+                        System.out.println(qz.getAnswer());
                         qz.removeQuestion();
                         incorrect = false;
                     }
@@ -34,11 +35,7 @@ public class QuizzerRunner
                         if (keyIn.nextLine().equalsIgnoreCase("y"))
                             System.out.println(qz.getQuestion());
                         else
-                        {
-                            System.out.println(qz.getAnswer());
-                            qz.removeQuestion();
                             incorrect = false;
-                        }
                     }
                 }
                 else
@@ -56,6 +53,26 @@ public class QuizzerRunner
             {
                 System.out.println("Sorry! Out of questions!");
                 cont = false;
+            }
+        }
+
+        System.out.println("Would you like to add questions and answeres to the quizzer for next time? (y/n)");
+        if (keyIn.nextLine().equalsIgnoreCase("y"))
+        {
+            cont = true;
+            while (cont)
+            {
+                System.out.print("Question: ");
+                String question = keyIn.nextLine();
+                System.out.print("Answer: ");
+                String answer = keyIn.nextLine();
+                qz.writeQuestion(question, answer);
+                
+                System.out.println("Do you want to add another question? (y/n)");
+                if (keyIn.nextLine().equalsIgnoreCase("y"))
+                    cont = true;
+                else
+                    cont = false;
             }
         }
         System.out.println("Thanks for participating in the quizzer! Goodbye!");
